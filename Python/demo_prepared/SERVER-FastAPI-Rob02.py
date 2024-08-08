@@ -845,7 +845,6 @@ async def upload_file(file: UploadFile = File(...)):
     with open(file_location, "wb+") as file_object:
         file_object.write(file.file.read())
 
-        return {"filename": file.filename}
 
 
 
